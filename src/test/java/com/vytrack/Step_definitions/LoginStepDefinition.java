@@ -41,7 +41,15 @@ public class LoginStepDefinition {
         //driver.quit();
     }
 
-   //String string = "storemanager85"
+    @Then("User should see {string} page")
+    public void user_should_see_page(String string) {
+        String actual = loginPage.getPageSubTitleText().trim();
+        Assert.assertEquals("Page title is not correct",string,actual);
+    }
+
+
+
+    //String string = "storemanager85"
     // String string2 = "wrong"
     @When("User logs in with {string} username and {string} password")
     public void user_logs_in_with_username_and_password(String string, String string2) {
@@ -49,7 +57,8 @@ public class LoginStepDefinition {
     }
 
 
-
+//    String expected = "Invalid user name or password."
+//    Then user verifies that "Invalid user name or password." message is displayed
     @Then("User verifies that {string} message is displayed")
     public void user_verifies_that_message_is_displayed(String string) throws InterruptedException {
 String expectedMassage = "string";

@@ -7,10 +7,13 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
+        plugin = {
+          "rerun:target/rerun.txt"
+        },
         features = "src/test/resources/features",
         glue = "com/vytrack/Step_definitions",
         dryRun = false,
-        tags = "@add_car",
+        tags = "@add_car_scenario_outline",
         publish = true
 )
 

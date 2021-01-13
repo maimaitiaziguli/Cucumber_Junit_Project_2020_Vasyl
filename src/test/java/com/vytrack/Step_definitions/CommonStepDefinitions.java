@@ -17,4 +17,5 @@ public class CommonStepDefinitions {
     public void user_clicks_on_save_and_close_button() {
         basePage.clickSaveAndClose();
     }
+
 }

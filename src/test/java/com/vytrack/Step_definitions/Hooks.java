@@ -19,12 +19,10 @@ Common practice is to store them in the separate class
 
 public class Hooks {
 
-    // hook Before = @BeforeMethod in TestNG
-    // hook After = @AfterMethod in TestNG
-    // it is not good idea to mix implicit and explicit
-    // -waits. It can lead to unexpected long waits.
-    //usually, we just use explicit and fluent waits.
-
+    //    hook before = @BeforeMethod in TestNG
+//    hook after = @AfterMethod in TestNG
+//    it's not a good idea to mix implicit and explicit waits. It can lead to unexpectedly long waits.
+//    usually, we just use explicit and fluent waits.
 
     @Before
     public void setup(Scenario scenario) {

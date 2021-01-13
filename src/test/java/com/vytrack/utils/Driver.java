@@ -43,11 +43,12 @@ public class Driver {
                     try {
                     DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
                     desiredCapabilities.setBrowserName("chrome");
-                    URL gridUrl = new URL("http://54.237.215.181:4444/wed/hub");
+                    URL gridUrl = new URL("http://3.82.5.142:4444/wed/hub");
                     driver = new RemoteWebDriver(gridUrl, desiredCapabilities);
                     }catch (Exception e){
                         e.printStackTrace();
                     }
+                    break;
 
                 default:
                     throw new RuntimeException("no such a browser yet!");

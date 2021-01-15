@@ -53,8 +53,8 @@ public class BrowserUtils {
      * As we know, text is stored in the value attribute. So we need to wait until value attribute
      * of the element will obtain expected text.
      */
-}
 
+}
 
 
 

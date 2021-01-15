@@ -7,7 +7,6 @@ import io.cucumber.java.en.When;
 import java.util.Map;
 
 public class CreateCarStepDefinitions {
-
     CreateCarPage createCarPage = new CreateCarPage();
 
     @Given("user clicks on create car button")
@@ -62,5 +61,4 @@ public class CreateCarStepDefinitions {
         createCarPage.enterLicensePlate(licensePlate);
         createCarPage.enterModelYear(modelYear);
     }
-
 }

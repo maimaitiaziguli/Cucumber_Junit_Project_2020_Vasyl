@@ -6,12 +6,10 @@ import com.vytrack.utils.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.apache.hc.client5.http.auth.UsernamePasswordCredentials;
 import org.junit.Assert;
 
 
-public class LoginStepDefinition {
-
+public class LoginStepDefinitions {
     LoginPage loginPage = new LoginPage();
 
     @Given("user is on the login page")
@@ -64,6 +62,5 @@ public class LoginStepDefinition {
         String actualResult = loginPage.getWarningMessageText();
         Assert.assertEquals(expected, actualResult);
     }
-
 
 }

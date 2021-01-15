@@ -29,4 +29,3 @@ Feature: As user, I want to be able to create new cars
       | QA            | 2021       | store manager |
       | RAMAZAN       | 2030       | store manager |
       | SDET          | 1999       | sales manager |
-

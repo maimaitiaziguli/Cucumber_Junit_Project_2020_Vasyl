@@ -10,16 +10,16 @@ import org.openqa.selenium.TakesScreenshot;
 
 import java.util.concurrent.TimeUnit;
 
-/* For example: SuiteSetUpAndTearDown
-Hooks triggered based on tags, not class name or their locations
-These methods can be a part of any step definition class
-Common practice is to store them in the separate class
+/**
+ * Hooks name is not reserved. You may name this class in any way.
+ * For example: SuiteSetupAndTearDown
+ * Hooks triggered based on tags not class name or their location.
+ * These methods can be a part of any step definition class.
+ * Common practice is to store them in the separate class.
  */
-
-
 public class Hooks {
 
-    //    hook before = @BeforeMethod in TestNG
+//    hook before = @BeforeMethod in TestNG
 //    hook after = @AfterMethod in TestNG
 //    it's not a good idea to mix implicit and explicit waits. It can lead to unexpectedly long waits.
 //    usually, we just use explicit and fluent waits.
